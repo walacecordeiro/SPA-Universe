@@ -29,11 +29,11 @@ header{
     /* border: 1px solid red; */
 }
 
-header img{
+header #logo img{
     transition: .2s;
 }
 
-header img:hover{
+header #logo img:hover{
     transform: scale(1.1);
 }
 
@@ -42,7 +42,7 @@ nav{
     gap: 3.2rem;
 }
 
-nav a:link{
+nav a{
     text-decoration: none;
     font-size: 2.1rem;
     line-height: 2.2rem;
@@ -52,14 +52,10 @@ nav a:link{
     transition: 0.2s;
 }
 
-nav a:visited, nav a:hover{
+nav a:hover{
     font-weight: 700;
     transform: scale(1.1);
     color: var(--txt-color-vivid);
-}
-
-nav a:active{
-    color: red;
 }
 
 #content{
