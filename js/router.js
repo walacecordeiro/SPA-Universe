@@ -35,7 +35,7 @@ export class Router {
         const { pathname } = window.location
         const bg = this.background[pathname]
 
-        document.querySelector("body").style.background = bg
+        document.querySelector("#body").style.background = bg
     }
 
 }
