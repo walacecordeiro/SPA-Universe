@@ -6,9 +6,109 @@
 
 :root{
     font-size: 62.5%;
+
+    --txt-color-opaque: #C4C4CC;
+    --txt-color-vivid: #E1E1E6;
 }
 
-#body {
+#body, button{
     font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#body{
+    min-height: 100vh;
     color: white;
+}
+
+header{
+    display: flex;
+    gap: 3.2rem;
+    align-items: center;
+    padding: 4rem 7.2rem;
+    /* border: 1px solid red; */
+}
+
+header img{
+    transition: .2s;
+}
+
+header img:hover{
+    transform: scale(1.1);
+}
+
+nav{
+    display: flex;
+    gap: 3.2rem;
+}
+
+nav a:link{
+    text-decoration: none;
+    font-size: 2.1rem;
+    line-height: 2.2rem;
+
+    color: var(--txt-color-opaque);
+
+    transition: 0.2s;
+}
+
+nav a:visited, nav a:hover{
+    font-weight: 700;
+    transform: scale(1.1);
+    color: var(--txt-color-vivid);
+}
+
+nav a:active{
+    color: red;
+}
+
+#content{
+    display: grid;
+    align-content: center;
+    padding: 0 10.2rem;
+    height: 70vh;
+    gap: 1.6rem;
+    /* border: 1px solid red; */
+}
+
+#content h1{
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 125%;
+}
+
+#content button{
+    display: flex;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--txt-color-opaque);
+
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 1.2rem;
+    margin-top: .8rem;
+    width: 19.5rem;
+
+    cursor: pointer;
+    transition: all .2s;
+}
+
+#content a{
+    width: fit-content;
+    text-decoration: none;
+    color: var(--txt-color-vivid);
+}
+
+#content button:hover{
+    color: all var(--txt-color-vivid);
+    transform: scale(1.1);
+}
+
+#content p{
+    width: 64.8rem;
+    font-size: 1.8rem;
+    line-height: 160%;
 }
